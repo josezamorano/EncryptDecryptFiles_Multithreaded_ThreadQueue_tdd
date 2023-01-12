@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FilJldCIpqgj6uLel4Pg56jLbUl9N18m+Vzth4vZ0+8afijtBeqYHNDPLJQGcJ0RPUVtw/rmpLvOqZG5bVVqZA==",
+  "dgSpecHash": "UHJFfT6hRfRoN1hDTxkmVKshcSiocB9xsI0BHf3eUE5X5yuzD1S9LYB07p0nzK6TfSLfQfI6KlQQESxhLzOXsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadPool_v007-UnitTests\\FileEncryptDecrypt\\FileEncryptDecrypt.csproj",
+  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadQueue_tdd\\FileEncryptDecrypt\\FileEncryptDecrypt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"

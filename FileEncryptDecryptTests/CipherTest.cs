@@ -1,5 +1,6 @@
 ﻿using Autofac.Extras.Moq;
 using FileEncryptDecrypt.DomainLayer;
+using FileEncryptDecrypt.DomainLayer.Models;
 using FileEncryptDecrypt.Utils.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -50,7 +51,13 @@ namespace FileEncryptDecryptTests
                 var inFile = "test";
                 var expected = "test";
 
-                var actual = cipher.EncryptFile(inFile, "test_Encrypt", "abc", callback);
+                CipherActionInfo cipherActionInfo = new CipherActionInfo();
+                cipherActionInfo.InFile = inFile;
+                cipherActionInfo.OutFile = "test_Encrypt";
+                cipherActionInfo.Password = "abc";
+                cipherActionInfo.ProgressCallback= callback;
+
+                var actual = cipher.EncryptFile(cipherActionInfo);
 
                 Assert.Equal(expected, actual);
 
@@ -88,7 +95,13 @@ namespace FileEncryptDecryptTests
                 var inFile = "test";
                 var expected = "test";
 
-                var actual = cipher.DecryptFile(inFile, "test_Decrypt", "abc", callback);
+                CipherActionInfo cipherActionInfo = new CipherActionInfo();
+                cipherActionInfo.InFile = inFile;
+                cipherActionInfo.OutFile = "test_Decrypt";
+                cipherActionInfo.Password = "abc";
+                cipherActionInfo.ProgressCallback = callback;
+
+                var actual = cipher.DecryptFile(cipherActionInfo);
 
                 Assert.Equal(expected, actual);
 

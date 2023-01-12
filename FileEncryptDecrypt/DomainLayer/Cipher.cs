@@ -1,4 +1,5 @@
-﻿using FileEncryptDecrypt.Utils.Interfaces;
+﻿using FileEncryptDecrypt.DomainLayer.Models;
+using FileEncryptDecrypt.Utils.Interfaces;
 using System.Security.Cryptography;
 using static FileEncryptor.Form1;
 
@@ -23,8 +24,13 @@ namespace FileEncryptDecrypt.DomainLayer
 
 
         //Test
-        public string EncryptFile(string inFile, string outFile, string password, ProgressCallback callback)
+        public string EncryptFile(CipherActionInfo cipherActionInfo)
         {
+            string inFile = cipherActionInfo.InFile;
+            string outFile = cipherActionInfo.OutFile;
+            string password = cipherActionInfo.Password;
+            ProgressCallback callback = cipherActionInfo.ProgressCallback;           
+                
             FileStream fileStreamIn = _fileProvider.FileOpenRead(inFile);
             FileStream fileStreamOut = _fileProvider.FileOpenWrite(outFile);
 
@@ -40,16 +46,20 @@ namespace FileEncryptDecrypt.DomainLayer
             {
                 fileStreamOut.Write(IV, 0, IV.Length);
                 fileStreamOut.Write(salt, 0, salt.Length);
-            }
-            
+            }           
 
             string fileEncryptionInfo = _cipherHelper.ResolveEncryption(fileStreamIn, fileStreamOut, sma, callback);
             return (string.IsNullOrEmpty(fileEncryptionInfo)) ? inFile : inFile + "|" + fileEncryptionInfo;
         }
 
         //Test
-        public string DecryptFile(string inFile, string outFile, string password, ProgressCallback callback)
+        public string DecryptFile(CipherActionInfo cipherActionInfo)
         {
+            string inFile = cipherActionInfo.InFile;
+            string outFile = cipherActionInfo.OutFile;
+            string password = cipherActionInfo.Password;
+            ProgressCallback callback = cipherActionInfo.ProgressCallback;
+
             // create and open the file streams
             FileStream fileStreamIn = File.OpenRead(inFile);
             FileStream fileStreamOut = File.OpenWrite(outFile);

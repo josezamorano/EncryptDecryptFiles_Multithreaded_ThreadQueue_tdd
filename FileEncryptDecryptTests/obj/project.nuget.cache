@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KJ6JDPKbyg4ejpTYXoEXabJkE6HRRXHvB11T3Utb4MAyTsaJpQr+nTqPDXuqbg5KTJwwMfj67VV295lU20VHZQ==",
+  "dgSpecHash": "686uXh+EGU6pgSagty0GLsG2n5OGQnwIMyNp1wlVYFcbqVow5JxpQLSl3/Kl6P8Ks7AL9yE2UAappOH2vAUVcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadPool_v007-UnitTests\\FileEncryptDecryptTests\\FileEncryptDecryptTests.csproj",
+  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadQueue_tdd\\FileEncryptDecryptTests\\FileEncryptDecryptTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\autofac.extras.moq\\6.1.0\\autofac.extras.moq.6.1.0.nupkg.sha512",

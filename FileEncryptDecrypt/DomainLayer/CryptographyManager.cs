@@ -119,11 +119,11 @@ namespace FileEncryptDecrypt.DomainLayer
             switch (cipherActionInfo.CipherState)
             {
                 case CipherState.Encrypted:
-                    cipherFileInfo = _cipher.EncryptFile(cipherActionInfo.InFile, cipherActionInfo.OutFile, cipherActionInfo.Password, cipherActionInfo.ProgressCallback);
+                    cipherFileInfo = _cipher.EncryptFile(cipherActionInfo);
                     break;
 
                 case CipherState.Decrypted:
-                    cipherFileInfo = _cipher.DecryptFile(cipherActionInfo.InFile, cipherActionInfo.OutFile, cipherActionInfo.Password, cipherActionInfo.ProgressCallback);
+                    cipherFileInfo = _cipher.DecryptFile(cipherActionInfo);
                     break;
             }
 

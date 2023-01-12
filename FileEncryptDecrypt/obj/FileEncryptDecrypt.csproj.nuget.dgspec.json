@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadPool_v007-UnitTests\\FileEncryptDecrypt\\FileEncryptDecrypt.csproj": {}
+    "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadQueue_tdd\\FileEncryptDecrypt\\FileEncryptDecrypt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadPool_v007-UnitTests\\FileEncryptDecrypt\\FileEncryptDecrypt.csproj": {
+    "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadQueue_tdd\\FileEncryptDecrypt\\FileEncryptDecrypt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadPool_v007-UnitTests\\FileEncryptDecrypt\\FileEncryptDecrypt.csproj",
+        "projectUniqueName": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadQueue_tdd\\FileEncryptDecrypt\\FileEncryptDecrypt.csproj",
         "projectName": "FileEncryptDecrypt",
-        "projectPath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadPool_v007-UnitTests\\FileEncryptDecrypt\\FileEncryptDecrypt.csproj",
+        "projectPath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadQueue_tdd\\FileEncryptDecrypt\\FileEncryptDecrypt.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadPool_v007-UnitTests\\FileEncryptDecrypt\\obj\\",
+        "outputPath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\FileEncryptDecrypt_Multithreaded_ThreadQueue_tdd\\FileEncryptDecrypt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

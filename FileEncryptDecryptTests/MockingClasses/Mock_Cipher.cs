@@ -1,4 +1,5 @@
-﻿using FileEncryptDecrypt.Utils.Interfaces;
+﻿using FileEncryptDecrypt.DomainLayer.Models;
+using FileEncryptDecrypt.Utils.Interfaces;
 using FileEncryptor;
 using System;
 using System.Collections.Generic;
@@ -10,12 +11,12 @@ namespace FileEncryptDecryptTests.MockingClasses
 {
     public class Mock_Cipher : ICipher
     {
-        public string DecryptFile(string inFile, string outFile, string password, Form1.ProgressCallback decryptionProgressCallback)
+        public string DecryptFile(CipherActionInfo cipherActionInfo)
         {
             throw new NotImplementedException();
         }
 
-        public string EncryptFile(string inFile, string outFile, string password, Form1.ProgressCallback callback)
+        public string EncryptFile(CipherActionInfo cipherActionInfo)
         {
             throw new NotImplementedException();
         }

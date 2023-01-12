@@ -1,12 +1,13 @@
-﻿using static FileEncryptor.Form1;
+﻿using FileEncryptDecrypt.DomainLayer.Models;
+using static FileEncryptor.Form1;
 
 namespace FileEncryptDecrypt.Utils.Interfaces
 {
     public interface ICipher
     {
-        string EncryptFile(string inFile, string outFile, string password, ProgressCallback callback);
+        string EncryptFile(CipherActionInfo cipherActionInfo);
 
-        string DecryptFile(string inFile, string outFile, string password, ProgressCallback decryptionProgressCallback);
+        string DecryptFile(CipherActionInfo cipherActionInfo);
 
     }
 }
